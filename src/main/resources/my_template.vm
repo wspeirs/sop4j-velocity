@@ -1,0 +1,23 @@
+## this is a single-line comment in the template
+Dear ${user.Name}- ## notice we use the formal directive here because we want the - right after the variable
+
+This is an e-mail because you signed up for $site and we're really happy that you did.
+#*
+ This is how you check to see if a value is null
+ This is also a multi-line comment
+*#
+#if( $message )
+This special message won't be shown because our \$message is null
+#end
+
+## notice we're calling the size() method on our list
+Here are $articles.size() cool articles you can read:
+
+## here is a foreach loop
+#foreach( $article in $articles )
+- $article
+#end
+
+Thanks for reading!
+
+Bill-
